@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D Controller;
     public Animator Animator;
+
+    public Joystick Joystick;
     
     public float RunSpeed = 40f;
     
@@ -15,11 +17,22 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        _horizontalMove = Input.GetAxis("Horizontal") * RunSpeed;
-        
+        if (Joystick.Horizontal >= .2f || Input.GetAxis("Horizontal") > 0)
+        {
+            _horizontalMove = RunSpeed;
+        }
+        else if (Joystick.Horizontal <= -.2f || Input.GetAxis("Horizontal") < 0)
+        {
+            _horizontalMove = -RunSpeed;
+        }
+        else
+        {
+            _horizontalMove = 0;
+        }
+
         Animator.SetFloat("Speed", Mathf.Abs(_horizontalMove));
         
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") || Joystick.Vertical >= .2f)
         {
             _jump = true;
             
