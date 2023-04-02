@@ -10,10 +10,10 @@ public class PlayerMovement : MonoBehaviour
 
     public Joystick Joystick;
     
-    public float RunSpeed = 40f;
+    public float RunSpeed = 20f;
     
-    float _horizontalMove = 0f;
-    bool _jump = false;
+    private float _horizontalMove = 0f;
+    private bool _jump = false;
 
     void Update()
     {
