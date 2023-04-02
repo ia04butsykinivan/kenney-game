@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 119130287}
   - component: {fileID: 119130286}
   m_Layer: 0
-  m_Name: 2
+  m_Name: Layer 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 123009307}
   - component: {fileID: 123009306}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,7 +262,7 @@ GameObject:
   - component: {fileID: 217051778}
   - component: {fileID: 217051777}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: CameraPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f963e6be148dd49a1a2c6f86462b253d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxSpeed: 0.02
+  parallaxSpeed: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 699916520}
   - component: {fileID: 699916521}
   m_Layer: 3
-  m_Name: p1_stand
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -553,7 +553,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7afdb1bef1039448bbc598891cd5029e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d33f49feda20a4eaf8de903d668146ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -629,7 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e6aa1ffce3141e9a500422616b8cc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpForce: 400
+  _jumpForce: 600
   _movementSmoothing: 0.05
   _airControl: 1
   _whatIsGround:
@@ -1173,7 +1173,7 @@ GameObject:
   - component: {fileID: 1193827766}
   - component: {fileID: 1193827765}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UIInputView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1429,7 +1429,7 @@ GameObject:
   - component: {fileID: 1470731892}
   - component: {fileID: 1470731891}
   m_Layer: 0
-  m_Name: 1
+  m_Name: Layer 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1512,7 +1512,7 @@ GameObject:
   - component: {fileID: 1511792933}
   - component: {fileID: 1511792932}
   m_Layer: 0
-  m_Name: 4
+  m_Name: Layer 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1595,7 +1595,7 @@ GameObject:
   - component: {fileID: 1576669105}
   - component: {fileID: 1576669104}
   m_Layer: 0
-  m_Name: 3
+  m_Name: Layer 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
