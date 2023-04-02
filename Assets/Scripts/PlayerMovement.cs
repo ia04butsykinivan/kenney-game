@@ -31,11 +31,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         Animator.SetFloat("Speed", Mathf.Abs(_horizontalMove));
-        
+
         if (Input.GetButtonDown("Jump") || Joystick.Vertical >= .2f)
         {
             _jump = true;
-            
+
             Animator.SetBool("IsJumping", true);
         }
     }
